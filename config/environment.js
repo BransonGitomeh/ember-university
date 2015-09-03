@@ -3,7 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'materialize',
-    podsModulePrefix: 'materialize/Modules',
+    podModulePrefix: 'materialize/Modules',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
