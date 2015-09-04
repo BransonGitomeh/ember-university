@@ -12,11 +12,6 @@ export default Ember.Component.extend({
     suppressScrollX: true
     });
 
-    //for rightside-navigation for chat
-    var righttnav = $("#chat-out").height();
-    $('.rightside-navigation').height(righttnav).perfectScrollbar({
-    suppressScrollX: true
-    });
 
  }.on('didInsertElement')
 });
