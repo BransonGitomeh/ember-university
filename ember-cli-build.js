@@ -19,7 +19,11 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
-  
+  //Imports for perfect-scrollbar
+  app.import('node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.css')
+  app.import('node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.js')
+  app.import('node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.js')
+
 
   return app.toTree();
 };
