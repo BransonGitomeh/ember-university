@@ -20,9 +20,9 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
 
   //Imports for perfect-scrollbar
-  app.import('node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.css')
-  app.import('node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.js')
-  app.import('node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.js')
+  app.import('bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css')
+  app.import('bower_components/perfect-scrollbar/js/perfect-scrollbar.js')
+  app.import('bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js')
 
 
   return app.toTree();
