@@ -11,7 +11,7 @@ export default Ember.Component.extend({
     var leftnavHeight = window.innerHeight - leftnav;
 
     Ember.$('.leftside-navigation').height(leftnavHeight).perfectScrollbar({
-      //suppressScrollX: true
+      suppressScrollX: true,
       wheelSpeed: 2,
       wheelPropagation: true,
       minScrollbarLength: 20
