@@ -1,10 +1,14 @@
 {{yield}}
 <li class="bold">
-  <a href="index.html" class="waves-effect waves-cyan"><i class="{{icon}}"></i>{{text}}
+  {{#link-to link class="waves-effect waves-cyan"}}
+  {{!-- <a href="index.html" class="waves-effect waves-cyan"> --}}
+    <i class="{{icon}}"></i>{{text}}
+
   {{#if newBadge}}
     <span class="new badge">{{newBadge}}</span>
   {{else}}
     <span class="badge">{{badge}}</span>
   {{/if}}
-  </a>
+  {{/link-to}}
+  {{!-- </a> --}}
 </li>
