@@ -1,72 +1,60 @@
 {{#wrappers/side-nav}}
-{{#wrappers/accordion-wrapper}}
-<!-- the whole side-nav can now contain an accordion anywhere without no other wrappers...just this one  -->
+  {{#wrappers/accordion-wrapper}}
+    <!-- the whole side-nav can now contain an accordion anywhere without no other wrappers...just this one  -->
 
 
 
-{{widgets/admin/user-card}}
+    {{widgets/admin/user-card}} {{items/nav-item text="Dashboard" icon="mdi-action-dashboard" newBadge="7" link="adminhome.dashboard"}}
+    <!-- this is the first thing that is seen by the suer and is supposed to be the topest thing on the nav...same to home -->
 
-
-{{items/nav-item text="Dashboard" icon="mdi-action-dashboard" newBadge="7" link="adminhome.dashboard"}}
-<!-- this is the first thing that is seen by the suer and is supposed to be the topest thing on the nav...same to home -->
-
-{{#wrappers/accordion-section text="Registration Forms" icon="mdi-action-assignment"}}
-   {{items/nav-item text="Student's Form"}}
-   {{items/nav-item text="Employee's Form"}}
-{{/wrappers/accordion-section}}
-
-<!-- this is the section that the user clicks to view spectific groupsof user types suportd by the system -->
-
-{{items/h-divider}}
-
-{{#wrappers/nav-section text="Users"}}
-
-    {{#wrappers/accordion-section text="Students" icon="mdi-action-assignment-ind"}}
-
-     {{items/nav-item text="Active" badge="200"}}
-     {{items/nav-item text="Completed" badge="128"}}
-     {{items/nav-item text="Issues" badge="65"}}
-
+    {{#wrappers/accordion-section text="Registration Forms" icon="mdi-action-assignment" }}
+      {{items/nav-item text="Student's Form"}} {{items/nav-item text="Employee's Form"}}
     {{/wrappers/accordion-section}}
 
-    {{#wrappers/accordion-section text="Lecturers" icon="mdi-action-perm-contact-cal"}}
+    <!-- this is the section that the user clicks to view spectific groupsof user types suportd by the system -->
 
-      {{items/nav-item text="Fulltime" badge="20"}}
-      {{items/nav-item text="Parttime" badge="128"}}
-      {{items/nav-item text="Promotional" badge="65"}}
+    {{items/h-divider}}
 
-    {{/wrappers/accordion-section}}
-{{/wrappers/nav-section}}
+    {{#wrappers/nav-section text="Users" }}
 
+      {{#wrappers/accordion-section text="Students" icon="mdi-action-assignment-ind" }}
 
-<!-- this is the section clicked by the user to view and manage resource distribution acros the users of the system -->
-<!-- idea 1 have the  students and employees here-->
-<!-- Employees show salaries  -->
-<!-- Students show Fees paid -->
-<!-- Various entities in the school ie Lib to show spendings and more details -->
+        {{items/nav-item text="Active" badge="200" link="adminhome.activestudents"}} {{items/nav-item text="Completed" badge="128"}} {{items/nav-item text="Issues" badge="65"}}
 
+      {{/wrappers/accordion-section}}
 
-<!-- @gidi you'll tell me what you think -->
-{{#wrappers/nav-section text="Employees"}}
+      {{#wrappers/accordion-section text="Lecturers" icon="mdi-action-perm-contact-cal" }}
 
-    {{#wrappers/accordion-section text="Payments" icon="mdi-editor-attach-money"}}
+        {{items/nav-item text="Fulltime" badge="20"}} {{items/nav-item text="Parttime" badge="128"}} {{items/nav-item text="Promotional" badge="65"}}
 
-     {{items/nav-item text="Active" badge="200"}}
-     {{items/nav-item text="Completed" badge="128"}}
-     {{items/nav-item text="Issues" badge="65"}}
-
-    {{/wrappers/accordion-section}}
-
-    {{#wrappers/accordion-section text="Issues" icon="mdi-alert-warning"}}
-
-      {{items/nav-item text="Fulltime" badge="20"}}
-      {{items/nav-item text="Parttime" badge="128"}}
-      {{items/nav-item text="Promotional" badge="65"}}
-
-    {{/wrappers/accordion-section}}
-{{/wrappers/nav-section}}
+      {{/wrappers/accordion-section}}
+    {{/wrappers/nav-section}}
 
 
+    <!-- this is the section clicked by the user to view and manage resource distribution acros the users of the system -->
+    <!-- idea 1 have the  students and employees here-->
+    <!-- Employees show salaries  -->
+    <!-- Students show Fees paid -->
+    <!-- Various entities in the school ie Lib to show spendings and more details -->
 
-{{/wrappers/accordion-wrapper}}
+
+    <!-- @gidi you'll tell me what you think -->
+    {{#wrappers/nav-section text="Employees" }}
+
+      {{#wrappers/accordion-section text="Payments" icon="mdi-editor-attach-money" }}
+
+        {{items/nav-item text="Active" badge="200"}} {{items/nav-item text="Completed" badge="128"}} {{items/nav-item text="Issues" badge="65"}}
+
+      {{/wrappers/accordion-section}}
+
+      {{#wrappers/accordion-section text="Issues" icon="mdi-alert-warning" }}
+
+        {{items/nav-item text="Fulltime" badge="20"}} {{items/nav-item text="Parttime" badge="128"}} {{items/nav-item text="Promotional" badge="65"}}
+
+      {{/wrappers/accordion-section}}
+    {{/wrappers/nav-section}}
+
+
+
+  {{/wrappers/accordion-wrapper}}
 {{/wrappers/side-nav}}

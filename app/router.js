@@ -7,7 +7,8 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('adminhome',{path:'/'},function(){
-    this.route('dashboard')
+    this.route('dashboard');
+    this.route('activestudents');
   });
   this.route('test');
 
