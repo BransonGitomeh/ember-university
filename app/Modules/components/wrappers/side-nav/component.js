@@ -17,6 +17,20 @@ export default Ember.Component.extend({
       minScrollbarLength: 20
     });
 
+    Ember.$('.sidebar-collapse').sideNav({
+      menuWidth: 300, // Default is 240
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+  );
 
- }.on('didInsertElement')
+
+ }.on('didInsertElement'),
+
+ actions:{
+   slideout:function(){
+     Ember.$('.button-collapse').sideNav('show');
+     console.log('slided')
+   }
+ }
 });
