@@ -1,5 +1,6 @@
 <div class="row">
-  <div class="col s12 m3 l3">
+
+  <div class="col s12 m4 l3">
     <ul id="task-card" class="collection with-header">
       <li class="collection-header cyan">
         <h5 class="task-card-title">
@@ -64,7 +65,7 @@
 
 
 
-  <div class="col s12 m3 l3">
+  <div class="col s12 m4 l3 hide-on-med-and-down">
     <div class="card center-align">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="https://i.warosu.org/data/jp/img/0136/46/1434257748407.jpg" alt="office">
@@ -85,7 +86,7 @@
 
 
 
-  <div class="col s12 m3 l6">
+  <div class="col s12 m8 l6">
 
 
 
@@ -116,97 +117,56 @@
 
       <div class="row">
 
+
         <form class="col s12">
 
           <div class="row">
+            {{items/form-input label="First Name" l="4" m="4" s="12"}}
 
-            <div class="input-field col s12 m3 l4">
-              <input type="text">
-              <label>First Name</label>
-            </div>
+            {{items/form-input label="Middle Name" l="4" m="4" s="12"}}
 
-            <div class="input-field col s12  m3 l4">
-              <input type="text">
-              <label>Middle Name</label>
-            </div>
-
-            <div class="input-field col s12  m3 l4">
-              <input type="text">
-              <label>Last Name</label>
-            </div>
-
+            {{items/form-input label="Last Name" l="4" m="4" s="12"}}
           </div>
 
           <div class="row">
+            {{items/form-input label="Adm .No." l="4" m="4" s="12"}}
 
-            <div class="input-field col s12 m3 l4">
-              <input type="text">
-              <label>Adm .No.</label>
-            </div>
+            {{items/form-input label="Id No" l="4" m="4" s="12"}}
 
-            <div class="input-field col s12  m3 l4">
-              <input type="text">
-              <label>Id No.</label>
-            </div>
-
-            <div class="input-field col s12  m3 l4">
-              <input type="text">
-              <label>Residential</label>
-            </div>
-
-
-
+            {{items/form-input label="Residential" l="4" m="4" s="12"}}
           </div>
 
 
         </form>
+        
       </div>
 
-      <h4 class="header2 center-align">Educational Profile</h4>
-      <div class="row">
+
+        {{#wrappers/form-section text="Educational Profile"}}
 
         <form class="col s12">
 
           <div class="row">
+            {{items/form-input label="Course" l="4" m="4" s="12"}}
 
-            <div class="input-field col s12 m3 l4">
-              <input type="text">
-              <label>Course</label>
-            </div>
+            {{items/form-input label="Level" l="4" m="4" s="12"}}
 
-            <div class="input-field col s12  m3 l4">
-              <input type="text">
-              <label>Level</label>
-            </div>
-
-            <div class="input-field col s12  m3 l4">
-              <input type="text">
-              <label>Semester</label>
-            </div>
-
+            {{items/form-input label="Semester" l="4" m="4" s="12"}}
           </div>
 
           <div class="row">
+            {{items/form-input label="Balance sem" l="4" m="4" s="12"}}
 
-            <div class="input-field col s12 m3 l4">
-              <input type="text">
-              <label>Balance sem</label>
-            </div>
+            {{items/form-input label="Total Paid" l="4" m="4" s="12"}}
 
-            <div class="input-field col s12  m3 l4">
-              <input type="text">
-              <label>Total Paid</label>
-            </div>
+            {{items/form-input label="Something else" l="4" m="4" s="12"}}
 
-            <div class="input-field col s12  m3 l4">
-              <input type="text">
-              <label>Something else</label>
-            </div>
           </div>
           <!-- Submit Button here -->
 
         </form>
-      </div>
+        {{/wrappers/form-section}}
+
     </ul>
   </div>
 </div>
