@@ -54,7 +54,7 @@ $black_10: rgba(0, 0, 0, 0.1);
 
 //urls
 $url_0: url(../images/user-bg-2.jpg);
-$url_1: url(../images/user-bg.jpg);
+$url_1: url(http://demo.geekslabs.com/materialize/v2.2/layout01/images/user-bg.jpg);
 $url_2: url(../images/sample-1.jpg);
 
 //@extend-elements
@@ -717,7 +717,7 @@ nav {
 	.flight-icon {
 		font-size: 2.2rem;
 		display: block;
-		
+
 	}
 	.card-content-bg {
 		background: $url_2 no-repeat center center;
