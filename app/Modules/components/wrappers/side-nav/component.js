@@ -6,7 +6,7 @@ export default Ember.Component.extend({
     Ember.$('select').not('.disabled').material_select();
 
     //for normal side-vav
-    var leftnav = $(".page-topbar").height();
+    var leftnav = Ember.$(".page-topbar").height();
 
     var leftnavHeight = window.innerHeight - leftnav;
 
@@ -30,7 +30,7 @@ export default Ember.Component.extend({
  actions:{
    slideout:function(){
      Ember.$('.button-collapse').sideNav('show');
-     console.log('slided')
+     console.log('slided');
    }
  }
 });

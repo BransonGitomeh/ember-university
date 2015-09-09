@@ -3,11 +3,11 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   didInsertElement: function() {
     // Perfect Scrollbar
-    $('select').not('.disabled').material_select();
+    Ember.$('select').not('.disabled').material_select();
 
     //for rightside-navigation for chat
-    var righttnav = $("#chat-out").height();
-    $('.rightside-navigation').height(righttnav).perfectScrollbar({
+    var righttnav = Ember.$("#chat-out").height();
+    Ember.$('.rightside-navigation').height(righttnav).perfectScrollbar({
     suppressScrollX: true
     });
 
