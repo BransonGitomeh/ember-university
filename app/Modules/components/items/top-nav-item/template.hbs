@@ -1,27 +1,33 @@
 <ul class="waves-effect waves-block waves-light {{direction}} {{hide}} ">
 
 {{#if title}}
-  <li>
-    {{#link-to route}}
+
+{{#link-to route tagName='li'}}
+
+      <a>
         {{#if icon}}
         <i class="{{icon}} {{direction}}"></i>
         {{/if}}
 
         {{title}}
+      </a>
+
     {{/link-to}}
 
-  </li>
+
+
 
   {{else}}
 
-  <li>
 
-      {{#link-to route}}
-      <i class="{{icon}}"></i>
+
+      {{#link-to route tagName='li'}}
+        <a>
+          <i class="{{icon}}"></i>
+        </a>
       {{/link-to}}
 
-  </li>
+
 
   {{/if}}
-
 </ul>
