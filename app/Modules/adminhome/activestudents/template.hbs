@@ -1,13 +1,7 @@
 <div class="row">
 
   <div class="col s12 m4 l3">
-    <ul id="task-card" class="collection with-header">
-      <li class="collection-header cyan">
-        <h6 class="task-card-title">
-          <a class="btn-floating cyan waves-effect waves-light "><i class="mdi-action-print"></i></a> Active students
-        </h6>
-      </li>
-
+  {{#wrappers/student-list title="Active Students"}}
 
       {{items/student-list title="Branson Gitomeh" adm="14/1996"}}
 
@@ -15,51 +9,24 @@
 
       {{items/student-list title="Mighty Kingkong"}}
 
+      {{items/student-list title="Micah Kinyua"}}
 
-
-    </ul>
-
-    <ul class="pagination">
-      <li class="disabled"><a href="#!"><i class="mdi-navigation-chevron-left"></i></a></li>
-      <li class="active cyan"><a href="#!">1</a></li>
-      <li class="waves-effect"><a href="#!">2</a></li>
-      <li class="waves-effect"><a href="#!">3</a></li>
-      <li class="waves-effect"><a href="#!">4</a></li>
-      
-      <li class="waves-effect"><a href="#!"><i class="mdi-navigation-chevron-right"></i></a></li>
-    </ul>
+    {{/wrappers/student-list}}
   </div>
 
 
 
   <div class="col s12 m4 l3 hide-on-med-and-down">
-    <div class="card center-align">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="https://i.warosu.org/data/jp/img/0136/46/1434257748407.jpg" alt="office">
-      </div>
 
-      <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">Caroline Wambui</span>
-        <p><i class="mdi-action-perm-phone-msg cyan-text text-darken-2"></i> +1 (612) 222 8989</p>
-        <p><i class="mdi-communication-email cyan-text text-darken-2"></i> mail@domain.com</p>
-      </div>
+    {{items/user-card name="Caroline Wambui" phone="+1 (612) 222 8989" mail="mail@domain.com"}}
 
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-      </div>
-    </div>
   </div>
 
 
 
   <div class="col s12 m8 l6">
 
-
-
     <ul class="collection with-header">
-
-
       <nav class="cyan">
         <div class="nav-wrapper">
 
