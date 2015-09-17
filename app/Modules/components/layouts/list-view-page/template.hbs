@@ -1,0 +1,63 @@
+{{!--active students layout--}}
+
+{{#if active}}
+
+<div class="row">
+
+  <div class="col s12 m4 l3">
+    {{widgets/active-students-list}}
+  </div>
+
+  <div class="col s12 m4 l3 hide-on-med-and-down">
+    {{items/user-card name="Caroline Wambui" phone="+1 (612) 222 8989" mail="mail@domain.com"}}
+  </div>
+
+  <div class="col s12 m8 l6">
+    {{widgets/student-profile-view}}
+  </div>
+</div>
+
+{{/if}}
+
+{{!--for the completed students layout--}}
+
+
+{{#if completed}}
+<div class="row">
+
+  <div class="col s12 m4 l3">
+    {{widgets/completed-students-list}}
+  </div>
+
+  <div class="col s12 m4 l3 hide-on-med-and-down">
+    {{items/user-card name="Caroline Wambui" phone="+1 (612) 222 8989" mail="mail@domain.com"}}
+  </div>
+
+  <div class="col s12 m8 l6">
+    {{widgets/student-profile-view}}
+  </div>
+
+</div>
+{{/if}}
+
+{{!--for the issue students layout--}}
+
+{{#if issues}}
+
+<div class="row">
+
+<div class="col s12 m4 l3">
+  {{widgets/issues-students-list}}
+</div>
+
+<div class="col s12 m4 l3 hide-on-med-and-down">
+  {{items/user-card name="Caroline Wambui" phone="+1 (612) 222 8989" mail="mail@domain.com"}}
+</div>
+
+<div class="col s12 m8 l6">
+  {{widgets/student-profile-view}}
+</div>
+</div>
+
+
+{{/if}}
