@@ -1,10 +1,27 @@
+<div class="blog-card">
+
 <ul id="task-card" class="collection with-header">
       <li class="collection-header cyan">
-        <h5 class="task-card-title">
-          <a class="btn-floating cyan waves-effect waves-light "><i class="mdi-action-print"></i></a> {{title}}
-        </h5>
+
+
+          <h5 class="task-card-title">
+            <i>  {{title}}</i>
+          </h5>
+
+
       </li>
+
+      <ul class="card-action-buttons">
+          <li>
+            <a class="btn-floating waves-effect waves-light cyan darken-2">
+              <i class="mdi-action-print"></i>
+            </a>
+          </li>
+      </ul>
+
+    <div class="card-content">
       {{yield}}
+    </div>
     </ul>
       <ul class="pagination">
       <li class="waves-effect disabled"><a href="#!"><i class="mdi-navigation-chevron-left"></i></a></li>
@@ -16,3 +33,5 @@
 
       <li class="waves-effect"><a href="#!"><i class="mdi-navigation-chevron-right"></i></a></li>
     </ul>
+
+</div>

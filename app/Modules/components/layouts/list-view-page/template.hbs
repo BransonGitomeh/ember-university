@@ -5,16 +5,10 @@
 <div class="row">
 
   <div class="col s12 m4 l3">
-    {{widgets/printable-students-list title="Active Students"}}
+    {{widgets/printable-students-list title="Active Students" route=route}}
   </div>
 
-  <div class="col s12 m4 l3 hide-on-med-and-down">
-    {{items/user-card name="Caroline Wambui" phone="+1 (612) 222 8989" mail="mail@domain.com"}}
-  </div>
-
-  <div class="col s12 m8 l6">
-    {{widgets/student-profile-view}}
-  </div>
+  {{outlet}}
 </div>
 
 {{/if}}
@@ -26,16 +20,10 @@
 <div class="row">
 
   <div class="col s12 m4 l3">
-    {{widgets/printable-students-list title="Completed Students"}}
+    {{widgets/printable-students-list title="Completed St.." route=route}}
   </div>
 
-  <div class="col s12 m4 l3 hide-on-med-and-down">
-    {{items/user-card name="Caroline Wambui" phone="+1 (612) 222 8989" mail="mail@domain.com"}}
-  </div>
-
-  <div class="col s12 m8 l6">
-    {{widgets/student-profile-view}}
-  </div>
+{{outlet}}
 
 </div>
 {{/if}}
@@ -47,16 +35,10 @@
 <div class="row">
 
 <div class="col s12 m4 l3">
-  {{widgets/printable-students-list title="Issues Students"}}
+  {{widgets/printable-students-list title="Issues Students" route=route}}
 </div>
 
-<div class="col s12 m4 l3 hide-on-med-and-down">
-  {{items/user-card name="Caroline Wambui" phone="+1 (612) 222 8989" mail="mail@domain.com"}}
-</div>
-
-<div class="col s12 m8 l6">
-  {{widgets/student-profile-view}}
-</div>
+{{outlet}}
 </div>
 
 
