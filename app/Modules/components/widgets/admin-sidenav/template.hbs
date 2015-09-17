@@ -1,7 +1,7 @@
 {{#wrappers/side-nav}}
   {{#wrappers/accordion-wrapper}}
     <!-- the whole side-nav can now contain an accordion anywhere without no other wrappers...just this one  -->
-    
+
     {{widgets/admin-sidenav-card}}
 
     {{items/nav-item text="Dashboard" icon="mdi-action-dashboard" newBadge="7" link="adminhome.dashboard"}}
@@ -20,7 +20,9 @@
 
       {{#wrappers/accordion-section text="Students" icon="mdi-action-assignment-ind" }}
 
-        {{items/nav-item text="Active" badge="200" link="adminhome.activestudents"}} {{items/nav-item text="Completed" badge="128"}} {{items/nav-item text="Issues" badge="65"}}
+        {{items/nav-item text="Active" badge="200" link="adminhome.activestudents"}}
+        {{items/nav-item text="Completed" badge="128" link="adminhome.completedstudents"}}
+        {{items/nav-item text="Issues" badge="65" link="adminhome.issuesstudents"}}
 
       {{/wrappers/accordion-section}}
 
