@@ -1,0 +1,65 @@
+<ul class="collection with-header">
+
+  {{#wrappers/nav-wrapper color="cyan"}}
+
+    {{items/top-nav-item  title="profile" direction="left" route="adminhome.activestudents"}}
+
+    {{items/top-nav-item  title="payments" direction="left" }}
+
+    {{items/top-nav-item  title="faults" direction="left" }}
+
+    {{items/top-nav-item icon="mdi-action-description" direction="right" }}
+    
+  {{/wrappers/nav-wrapper}}
+
+  <div class="row">
+    <form class="col s12">
+
+      <div class="row">
+        {{items/form-input label="First Name" l="4" m="4" s="12"}}
+
+        {{items/form-input label="Middle Name" l="4" m="4" s="12"}}
+
+        {{items/form-input label="Last Name" l="4" m="4" s="12"}}
+      </div>
+
+      <div class="row">
+        {{items/form-input label="Adm .No." l="4" m="4" s="12"}}
+
+        {{items/form-input label="Id No" l="4" m="4" s="12"}}
+
+        {{items/form-input label="Residential" l="4" m="4" s="12"}}
+      </div>
+
+
+    </form>
+
+  </div>
+
+
+    {{#wrappers/form-section text="Educational Profile"}}
+
+    <form class="col s12">
+
+      <div class="row">
+        {{items/form-input label="Course" l="4" m="4" s="12"}}
+
+        {{items/form-input label="Level" l="4" m="4" s="12"}}
+
+        {{items/form-input label="Semester" l="4" m="4" s="12"}}
+      </div>
+
+      <div class="row">
+        {{items/form-input label="Balance sem" l="4" m="4" s="12"}}
+
+        {{items/form-input label="Total Paid" l="4" m="4" s="12"}}
+
+        {{items/form-input label="Something else" l="4" m="4" s="12"}}
+
+      </div>
+      <!-- Submit Button here -->
+
+    </form>
+    {{/wrappers/form-section}}
+
+</ul>
