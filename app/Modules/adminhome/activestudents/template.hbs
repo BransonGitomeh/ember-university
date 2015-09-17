@@ -27,23 +27,20 @@
   <div class="col s12 m8 l6">
 
     <ul class="collection with-header">
-      <nav class="cyan">
-        <div class="nav-wrapper">
 
-            <ul>
-              <li><a>Profile</a></li>
-              <li><a>Payments</a></li>
-              <li><a>Faults</a></li>
-            </ul>
-            <ul class="right">
-              <li>
-                <a><i class="mdi-action-description"></i></a>
-              </li>
+      {{#wrappers/nav-wrapper}}
+        {{items/top-nav-item icon="mdi-action-description" title="itemText" direction="left" route="adminhome.activestudents"}}
 
-            </ul>
+        {{items/top-nav-item  title="profile" direction="left" route="adminhome.activestudents"}}
 
-        </div>
-      </nav>
+        {{items/top-nav-item  title="payments" direction="left" }}
+
+        {{items/top-nav-item  title="faults" direction="left" }}
+
+        {{items/top-nav-item icon="mdi-action-description" direction="right" }}
+
+      {{/wrappers/nav-wrapper}}
+
 
 
 

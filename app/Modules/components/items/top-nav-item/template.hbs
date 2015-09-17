@@ -1,0 +1,27 @@
+<ul class="{{direction}} {{hide}}">
+
+{{#if title}}
+  <li>
+    {{#link-to route}}
+        {{#if icon}}
+        <i class="{{icon}} {{direction}}"></i>
+        {{/if}}
+
+        {{title}}
+    {{/link-to}}
+
+  </li>
+
+  {{else}}
+
+  <li>
+
+      {{#link-to route}}
+      <i class="{{icon}}"></i>
+      {{/link-to}}
+  
+  </li>
+
+  {{/if}}
+
+</ul>
