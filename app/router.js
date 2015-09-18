@@ -6,6 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('universitieslist'),
   this.route('adminhome',{path:'/'},function(){
     this.route('dashboard',{path:'/dashboard'});
 
