@@ -1,0 +1,18 @@
+{{#wrappers/form-tabs-wrapper}}
+
+    {{!--the top tab list to chose the content at the bottom--}}
+    {{#wrappers/nav-wrapper color="cyan"}}
+
+      {{items/top-nav-item  title="profile" direction="left" route=profileRoute}}
+
+      {{items/top-nav-item  title="payments" direction="left" route=paymentsRoute}}
+
+      {{!--items/top-nav-item  title="faults" direction="left" route=faultsRoute--}}
+
+      {{items/top-nav-item icon="mdi-action-description" direction="right"}}
+
+    {{/wrappers/nav-wrapper}}
+
+    {{outlet}}
+
+{{/wrappers/form-tabs-wrapper}}
