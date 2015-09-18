@@ -11,13 +11,25 @@ Router.map(function() {
 
     //student list views
     this.route('activestudents',function(){
-      this.route('details')
+      this.route('details',function(){
+        this.route('profile')
+        this.route('payments')
+        this.route('faults')
+      })
     });
     this.route('completedstudents',function(){
-      this.route('details')
+      this.route('details',function(){
+        this.route('profile')
+        this.route('payments')
+        this.route('faults')
+      })
     });
     this.route('issuesstudents',function(){
-      this.route('details')
+      this.route('details',function(){
+        this.route('profile')
+        this.route('payments')
+        this.route('faults')
+      })
     });
 
     //data entry forms
