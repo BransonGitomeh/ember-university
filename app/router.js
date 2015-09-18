@@ -34,6 +34,7 @@ Router.map(function() {
 
     //data entry forms
     this.route('newStudentForm');
+    this.route('newEmployeeForm');
   });
   this.route('test');
 
