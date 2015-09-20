@@ -1,12 +1,12 @@
 {{yield}}
-<div class="card">
-    <div class="card-content  green white-text">
-        <p class="card-stats-title"><i class="mdi-social-group-add"></i> New Clients</p>
-        <h4 class="card-stats-number">566</h4>
-        <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 15% <span class="green-text text-lighten-5">from yesterday</span>
+<div class="card hoverable">
+    <div class="card-content  {{color}} white-text">
+        <p class="card-stats-title"><i class="{{topicon}}"></i>{{title}}</p>
+        <h4 class="card-stats-number">{{number}}</h4>
+        <p class="card-stats-compare"><i class="{{bottomicon}}"></i> {{percentage}}% <span class="{{color}}-text text-lighten-5">from yesterday</span>
         </p>
     </div>
-    <div class="card-action  green darken-2">
+    <div class="card-action  {{color}} darken-2">
         <div id="clients-bar"><canvas width="290" height="25" style="display: inline-block; width: 290px; height: 25px; vertical-align: top;"></canvas></div>
     </div>
 </div>

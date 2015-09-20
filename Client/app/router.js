@@ -10,6 +10,14 @@ Router.map(function() {
   this.route('adminhome',{path:'/:university_id/dashboard'},function(){
     this.route('dashboard');
 
+    this.route('courses',function(){
+      this.route('details',function(){
+        this.route('profile');
+        this.route('payments');
+        this.route('faults');
+      });
+    });
+
     //student list views
     this.route('activestudents',function(){
       this.route('details',function(){

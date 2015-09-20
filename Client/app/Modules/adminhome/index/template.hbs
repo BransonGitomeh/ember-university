@@ -1,25 +1,28 @@
 {{outlet}}
 <section id="content">
-
     <div class="container">
-
-
-
       <!-- {{items/chart-dashboard}} -->
-
         <div id="card-stats">
             <div class="row">
                 <div class="col s12 m6 l3">
-                    {{items/stat-card}}
+                  {{#link-to 'adminhome.courses'}}
+
+                    {{items/stat-card
+                       topicon="mdi-social-group-add"
+                       title="Courses Offered" number="20"
+                       color="blue"
+                       bottomicon="mdi-hardware-keyboard-arrow-up"}}
+
+                  {{/link-to}}
                 </div>
                 <div class="col s12 m6 l3">
-                    {{items/stat-card}}
+                  {{items/stat-card topicon="mdi-social-group-add" color="blue" bottomicon="mdi-hardware-keyboard-arrow-up"}}
                 </div>
                 <div class="col s12 m6 l3">
-                    {{items/stat-card}}
+                  {{items/stat-card topicon="mdi-social-group-add" color="blue" bottomicon="mdi-hardware-keyboard-arrow-up"}}
                 </div>
                 <div class="col s12 m6 l3">
-                    {{items/stat-card}}
+                  {{items/stat-card topicon="mdi-social-group-add" color="blue" bottomicon="mdi-hardware-keyboard-arrow-up"}}
                 </div>
 
             </div>

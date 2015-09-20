@@ -1,0 +1,31 @@
+{{#if student}}
+
+{{#wrappers/form-wrapper student="true"}}
+
+      {{widgets/form-personal-details}}
+
+      {{widgets/form-contacts}}
+
+      {{widgets/form-past-school-results}}
+
+      {{widgets/form-student-application-section}}
+
+{{/wrappers/form-wrapper}}
+
+{{/if}}
+
+
+
+{{#if employee}}
+
+{{#wrappers/form-wrapper employee="true"}}
+
+      {{widgets/form-personal-details}}
+
+      {{widgets/form-contacts}}
+
+      {{widgets/form-past-school-results}}
+
+{{/wrappers/form-wrapper}}
+
+{{/if}}

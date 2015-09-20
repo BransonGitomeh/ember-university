@@ -1,6 +1,18 @@
 @import 'materialize';
 @import 'ember-cli-materialize';
 
+
+@import 'components/color';
+
+// Custom color settings go here
+$primary-color: color("blue", "lighten-1");
+
+@import 'components/variables';
+@import 'materialize';
+@import 'ember-cli-materialize';
+
+
+
 //colors
 $color_alabaster_approx: #fcfcfc;
 $color_alto_approx: #ddd;
@@ -58,8 +70,7 @@ $url_1: url(http://demo.geekslabs.com/materialize/v2.2/layout01/images/user-bg.j
 $url_2: url(../images/sample-1.jpg);
 
 
-//center this div
-div.mydiv {width: 200px; margin:0px auto}
+
 
 
 

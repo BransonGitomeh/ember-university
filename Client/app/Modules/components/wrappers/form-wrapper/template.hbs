@@ -6,14 +6,32 @@
   <div class="container">
     <div class="row">
       <div class="col s12 m12 l12">
-        <h5 class="breadcrumbs-title">New Student/Employee (or) Registration Form</h5>
+
+        {{#if student}}
+        <h5 class="breadcrumbs-title">New Student Form</h5>
+
         <ol class="breadcrumb">
           <li><a href="index.html">Dashboard</a>
           </li>
-          <li><a href="#">RegistrationForms</a>
+          <li><a href="#">Forms</a>
           </li>
           <li class="active">Student</li>
         </ol>
+
+        {{/if}}
+
+        {{#if employee}}
+        <h5 class="breadcrumbs-title">New Employee Form</h5>
+
+        <ol class="breadcrumb">
+          <li><a href="index.html">Dashboard</a>
+          </li>
+          <li><a href="#">Forms</a>
+          </li>
+          <li class="active">Employee</li>
+        </ol>
+        {{/if}}
+
       </div>
     </div>
   </div>
