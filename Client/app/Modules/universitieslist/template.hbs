@@ -2,21 +2,24 @@
     <div class="container">
         <div id="card-widgets">
             <div class="row centerBox">
-              <div class="col s12 m12 l4" style="margin: 0;">
-                  {{#link-to 'adminhome'}}
-                    {{widgets/university-card
+              <div class="col s12 m12 l4">
+                {{#each model as |user|}}
+                  {{#each user.universities as |university|}}
 
-                       speciality="School of Bussnes"
-                       started="18th June, 2015"
-                       title="Salsa University"
-                       ownerpic="https://i.warosu.org/data/jp/img/0136/46/1434257748407.jpg"
-                       logo="http://demo.geekslabs.com/materialize/v2.2/layout01/images/gallary/30.jpg"
-                       ownername="BransonGitomeh"
+                    {{#link-to 'adminhome'}}
+                      {{widgets/university-card
 
+                         speciality=awesomeness
+                         started=university.startedyear
+                         title=university.name
+                         ownerpic="https://i.warosu.org/data/jp/img/0136/46/1434257748407.jpg"
+                         logo="http://demo.geekslabs.com/materialize/v2.2/layout01/images/gallary/30.jpg"
+                         ownername="BransonGitomeh"
+                    }}
+                    {{/link-to}}
 
-
-                  }}
-                  {{/link-to}}
+                  {{/each}}
+                {{/each}}
               </div>
             </div>
         </div>
@@ -31,6 +34,33 @@
          ........
      </div>
 </div>
+
+{{#each model as |university|}}
+
+welcome {{university.name}} {{university.user.firstname}}
+
+
+
+{{user.firstname}}
+{{user.middlename}}
+{{user.lastname}}
+{{user.gender}}
+{{user.dob}}
+{{user.nationality}}
+{{user.idNo}}
+{{user.phonenumber}}
+{{/each}}
+
+
+{{#each model.universities as |uni|}}
+  <li>{{uni.name}}</li>
+{{/each}}
+
+
+
+
+
+
 
 
 {{!--i do not think materialize has the inbuilt css to center stuff that is not text so its a reall big issue header-search-input

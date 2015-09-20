@@ -101,7 +101,7 @@ module.exports = {
 
 
     //other stuff now
-    
+
     role: {
       type: 'string'
     },
@@ -131,7 +131,7 @@ module.exports = {
     userfulltimelecturerlist : { model: 'userfulltimelecturerlist' },
     userpromotionollecturerlist : { model: 'userpromotionollecturerlist' },
 
-    
+
     //his student account
     //Todo make them accounts--not one
     employees : {
