@@ -3,24 +3,19 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   actions:{
     viewprofile:function(){
-      alert('viewprofile on ittem');
-      this.sendAction('viewprofile')
+      alert('sending user to view profile');
     },
     viewsettings:function(){
-      alert('viewsettings on ittem');
-      this.sendAction('viewsettings')
+      alert('sending user to view settings');
     },
     viewhelp:function(){
-      alert('viewhelp on ittem');
-      this.sendAction('viewhelp')
+      alert('sending user to view help @zendesk');
     },
     locksession:function(){
-      alert('locksession on ittem');
-      this.sendAction('locksession')
+      alert('Locking down users account..not logging out');
     },
     logout:function(){
-      alert('logout on ittem');
-      this.sendAction('logout')
+      alert('logging user out and deleting all held data');
     }
   }
 });
