@@ -25,7 +25,7 @@ university.reopenClass({
     },
     {
       id: 2,
-      name: 'Premeer University collage',
+      name: 'Premeer Collage',
       innitials:'PUC',
       specialisation :'ECD training for young teachers',
       startedyear: '2010',

@@ -57,6 +57,13 @@ $url_0: url(../images/user-bg-2.jpg);
 $url_1: url(http://demo.geekslabs.com/materialize/v2.2/layout01/images/user-bg.jpg);
 $url_2: url(../images/sample-1.jpg);
 
+
+//center this div
+div.mydiv {width: 200px; margin:0px auto}
+
+
+
+
 //@extend-elements
 //original selectors
 //.user-task, .user-time

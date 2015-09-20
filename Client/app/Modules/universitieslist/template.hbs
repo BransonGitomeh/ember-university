@@ -1,72 +1,37 @@
 <section id="content">
     <div class="container">
         <div id="card-widgets">
-            <div class="row centerBox">
-              <div class="col s12 m12 l4">
-                {{#each model as |user|}}
-                  {{#each user.universities as |university|}}
+            <div class="row">
+              <div id="wrapper" style="text-align: center">
+                  <div id="yourdiv" style="display: inline-block;">
+                      {{#each model as |user|}}
+                        {{#each user.universities as |university|}}
+                          <div id="yourdiv" style="display: inline-block;">
 
-                    {{#link-to 'adminhome'}}
-                      {{widgets/university-card
 
-                         speciality=awesomeness
-                         started=university.startedyear
-                         title=university.name
-                         ownerpic="https://i.warosu.org/data/jp/img/0136/46/1434257748407.jpg"
-                         logo="http://demo.geekslabs.com/materialize/v2.2/layout01/images/gallary/30.jpg"
-                         ownername="BransonGitomeh"
-                    }}
-                    {{/link-to}}
+                            <!-- {{widgets/map-card}} -->
+                            {{#link-to 'adminhome'}}
+                              {{widgets/university-card
+                                 innitials= university.innitials
+                                 speciality=university.specialisation
+                                 started=university.startedyear
+                                 title=university.name
+                                 ownerpic="https://i.warosu.org/data/jp/img/0136/46/1434257748407.jpg"
+                                 logo="http://demo.geekslabs.com/materialize/v2.2/layout01/images/gallary/30.jpg"
+                                 ownername=university.user.firstname
+                            }}
+                            {{/link-to}}
 
-                  {{/each}}
-                {{/each}}
+
+
+
+
+                          </div>
+                        {{/each}}
+                      {{/each}}
+                    </div>
+                  </div>
               </div>
             </div>
         </div>
-
-      </div>
 </section>
-
-
-<div class="ui segment" style="margin: 0 auto;">
-     <h4 class="ui dividing header">Account Info</h4>
-     <div class="ui form">
-         ........
-     </div>
-</div>
-
-{{#each model as |university|}}
-
-welcome {{university.name}} {{university.user.firstname}}
-
-
-
-{{user.firstname}}
-{{user.middlename}}
-{{user.lastname}}
-{{user.gender}}
-{{user.dob}}
-{{user.nationality}}
-{{user.idNo}}
-{{user.phonenumber}}
-{{/each}}
-
-
-{{#each model.universities as |uni|}}
-  <li>{{uni.name}}</li>
-{{/each}}
-
-
-
-
-
-
-
-
-{{!--i do not think materialize has the inbuilt css to center stuff that is not text so its a reall big issue header-search-input
-
-we will look for a way to center this, till then i think itll do the task-add
-
-@gideon
-
-feel free to mess with this..im nishinda lol--}}
