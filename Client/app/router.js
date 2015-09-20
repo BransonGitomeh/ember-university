@@ -7,7 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('universitieslist',{path:'/'}),
-  this.route('adminhome',{path:'/dashboard'},function(){
+  this.route('adminhome',{path:'/:university_id/dashboard'},function(){
     this.route('dashboard');
 
     //student list views

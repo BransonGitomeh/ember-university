@@ -1,11 +1,15 @@
-{{wrappers/top-nav color="cyan"}}
+{{wrappers/top-nav color="cyan" searchterm=model.name}}
 
 <div id="main">
         <!-- START WRAPPER -->
         <div class="wrapper">
 
 
-            {{widgets/admin-sidenav}}
+            {{widgets/admin-sidenav
+               username=model.user.firstname
+               logout="logout"
+
+              }}
 
               {{outlet}}
 

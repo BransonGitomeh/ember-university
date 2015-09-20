@@ -1,15 +1,15 @@
-{{#wrappers/user-nav-card name="Sam Gk" role="Administrator" url="http://demo.geekslabs.com/materialize/v2.2/layout01/images/avatar.jpg"}}
+{{#wrappers/user-nav-card name=username role="Administrator" url="http://demo.geekslabs.com/materialize/v2.2/layout01/images/avatar.jpg"}}
 
   {{#wrappers/dropdown-wrapper}}
-    {{items/dropdown-item icon="mdi-action-face-unlock" text="Profile"}}
+    {{items/dropdown-item icon="mdi-action-face-unlock" text="Profile" clicked="viewprofile"}}
 
-    {{items/dropdown-item icon="mdi-action-settings" text="Settings"}}
+    {{items/dropdown-item icon="mdi-action-settings" text="Settings" action="viewsettings"}}
 
-    {{items/dropdown-item icon="mdi-communication-live-help" text="Help"}}
+    {{items/dropdown-item icon="mdi-communication-live-help" text="Help" action="viewhelp"}}
 
-    {{items/dropdown-item icon="mdi-action-lock-outline" text="Lock"}}
+    {{items/dropdown-item icon="mdi-action-lock-outline" text="Lock" action="locksession"}}
 
-    {{items/dropdown-item icon="mdi-hardware-keyboard-tab" text="Logout"}}
+    {{items/dropdown-item icon="mdi-hardware-keyboard-tab" text="Logout" clicked="logout"}}
   {{/wrappers/dropdown-wrapper}}
 
 {{/wrappers/user-nav-card}}
