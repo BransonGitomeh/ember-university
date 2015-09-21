@@ -66,7 +66,10 @@ Router.map(function() {
     this.route('newStudentForm');
     this.route('newEmployeeForm');
   });
-  this.route('test');
+  this.route('test',function(){
+    this.route('datanodes');
+    this.route('excell');
+  });
 
 
 });

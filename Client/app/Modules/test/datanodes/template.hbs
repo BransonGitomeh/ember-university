@@ -1,0 +1,40 @@
+this are the student accounts
+
+all users
+{{#each model as |user|}}
+
+<li>{{user.firstname}}</li>
+
+<br>
+-- {{user.firstname}} owns the following universities<br>
+{{#each user.universities as |university|}}
+<b>{{university.name}}</b> with <b>{{university.totalStudents}}</b> total students
+
+
+<li>active students list -->id:{{university.universityactivestudentlist.id}} with  <b>{{university.universityactivestudentlist.Totalstudents}}</b> students</li>
+
+
+{{#each university.universityactivestudentlist.students as |student|}}
+<li>{{student.user.firstname}}</li>
+{{/each}}
+{{/each}}
+
+
+
+
+
+  {{#each user.useractivestudentlist.students as |student|}}
+  <hr>
+-- <b>{{user.firstname}}</b>  has the following active student account
+
+    <li><b>{{student.id}}</b> in <b>{{student.university.name}}</b></li>
+
+    <br>
+
+    --other student accounts in that uni include
+      {{#each student.university.students as |student|}}
+        <li><b>{{student.id}}</b> for user <b>{{student.user.firstname}}</b></li>
+      {{/each}}
+      <br>
+  {{/each}}
+{{/each}}

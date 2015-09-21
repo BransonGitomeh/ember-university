@@ -29,6 +29,9 @@ module.exports = function(defaults) {
   app.import('bower_components/pdfmake/build/pdfmake.min.js')
   app.import('bower_components/pdfmake/build/vfs_fonts.js')
 
+  //xlxs
+  app.import('bower_components/js-xlsx/dist/xlsx.core.min.js')
+
 
   return app.toTree();
 };
