@@ -10,6 +10,9 @@ var university = DS.Model.extend({
 
   //owner
   user: DS.belongsTo('user',{async:true}),
+
+  //students
+  students:DS.hasMany('student',{async:true})
 })
 
 university.reopenClass({
@@ -21,7 +24,8 @@ university.reopenClass({
       specialisation :'Bussness consulting',
       startedyear: '1997',
       description: 'an awesome university that was done blablablabla',
-      user:1
+      user:1,
+      students:[1,2,3]
     },
     {
       id: 2,
@@ -30,7 +34,8 @@ university.reopenClass({
       specialisation :'ECD training for young teachers',
       startedyear: '2010',
       description: 'an awesome university that was done blablablabla',
-      user:1
+      user:1,
+      students:[4,5,6]
     },
 
   ]

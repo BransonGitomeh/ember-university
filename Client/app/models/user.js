@@ -28,8 +28,9 @@ var user = DS.Model.extend({
   highSchoolCompletePoints: DS.attr('string'),
 
   //lists
+  students:DS.hasMany('student',{async:true}),
   //students lists
-  useractivestudentlist: DS.attr('string'),
+  useractivestudentlist: DS.belongsTo('useractivestudentlist',{async:true}),
   userdonestudentlist: DS.attr('string'),
   userissuesstudentlist: DS.attr('string'),
 
@@ -58,7 +59,9 @@ user.reopenClass({
       idNo: '11340673',
       residentialarea: 'kenyan',
       phonenumber: '0724736012',
-      universities:[1,2]
+      universities:[1,2],
+      useractivestudentlist:1,
+      students:[1,2,3]
     }
   ]
 });
