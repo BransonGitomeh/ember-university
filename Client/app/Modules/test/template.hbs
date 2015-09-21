@@ -9,6 +9,14 @@ all users
 -- {{user.firstname}} owns the following universities
 {{#each user.universities as |university|}}
 <b>{{university.name}}</b>
+
+active student lists in that university
+<li>{{university.universityactivestudentlist.id}}</li>
+
+students in that active list <b>{{university.universityactivestudentlist.Totalstudents}}</b>
+{{#each university.universityactivestudentlist.students as |student|}}
+<li>{{student.user.firstname}}</li>
+{{/each}}
 {{/each}}
 
 

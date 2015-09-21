@@ -12,7 +12,15 @@ var university = DS.Model.extend({
   user: DS.belongsTo('user',{async:true}),
 
   //students
-  students:DS.hasMany('student',{async:true})
+  students:DS.hasMany('student',{async:true}),
+
+  //active students
+  universityactivestudentlist:DS.belongsTo('universityactivestudentlist',{async:true}),
+  //number of active students computed
+  TOTALuniversityactivestudentlist: function() {
+    var students = this.get('universityactivestudentlist');
+    return students.get('length')
+ }.property('universityactivestudentlist'),
 })
 
 university.reopenClass({
@@ -25,7 +33,8 @@ university.reopenClass({
       startedyear: '1997',
       description: 'an awesome university that was done blablablabla',
       user:1,
-      students:[1,2,3]
+      students:[1,2,3],
+      universityactivestudentlist:1
     },
     {
       id: 2,
@@ -35,7 +44,8 @@ university.reopenClass({
       startedyear: '2010',
       description: 'an awesome university that was done blablablabla',
       user:1,
-      students:[4,5,6]
+      students:[4,5,6],
+      universityactivestudentlist:2
     },
 
   ]

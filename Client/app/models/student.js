@@ -8,7 +8,9 @@ var student = DS.Model.extend({
   useractivestudentlist: DS.belongsTo('useractivestudentlist',{async:true}),
 
   //university
-  university:DS.belongsTo('university',{async:true})
+  university:DS.belongsTo('university',{async:true}),
+
+  universityactivestudentlist:DS.belongsTo('universityactivestudentlist',{async:true})
 
 })
 
@@ -18,33 +20,40 @@ student.reopenClass({
       id: 1,
       useractivestudentlist:1,
       user:1,
-      university:1
+      university:1,
+      universityactivestudentlist:1
 
     },{
       id: 2,
       useractivestudentlist:1,
       user:1,
-      university:1
+      university:1,
+      universityactivestudentlist:1,
+
     },{
       id: 3,
       useractivestudentlist:1,
       user:1,
-      university:1
+      university:1,
+      universityactivestudentlist:1
     },{
       id: 4,
       useractivestudentlist:1,
       user:1,
-      university:2
+      university:2,
+      universityactivestudentlist:2
     },{
       id: 5,
       useractivestudentlist:1,
       user:1,
-      university:2
+      university:2,
+      universityactivestudentlist:2
     },{
       id: 6,
       useractivestudentlist:1,
       user:1,
-      university:2
+      university:2,
+      universityactivestudentlist:3
     }
   ]
 });
