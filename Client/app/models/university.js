@@ -14,13 +14,14 @@ var university = DS.Model.extend({
   //students
   students:DS.hasMany('student',{async:true}),
 
+  Totalstudents: function() {
+    var students = this.get('students');
+    return students.get('length')
+  }.property('students'),
+
   //active students
   universityactivestudentlist:DS.belongsTo('universityactivestudentlist',{async:true}),
-  //number of active students computed
-  TOTALuniversityactivestudentlist: function() {
-    var students = this.get('universityactivestudentlist');
-    return students.get('length')
- }.property('universityactivestudentlist'),
+
 })
 
 university.reopenClass({

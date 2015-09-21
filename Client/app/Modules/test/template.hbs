@@ -6,14 +6,14 @@ all users
 <li>{{user.firstname}}</li>
 
 <br>
--- {{user.firstname}} owns the following universities
+-- {{user.firstname}} owns the following universities<br>
 {{#each user.universities as |university|}}
-<b>{{university.name}}</b>
+<b>{{university.name}}</b> with <b>{{university.Totalstudents}}</b> total students
 
-active student lists in that university
-<li>{{university.universityactivestudentlist.id}}</li>
 
-students in that active list <b>{{university.universityactivestudentlist.Totalstudents}}</b>
+<li>active students list -->id:{{university.universityactivestudentlist.id}} with  <b>{{university.universityactivestudentlist.Totalstudents}}</b> students</li>
+
+
 {{#each university.universityactivestudentlist.students as |student|}}
 <li>{{student.user.firstname}}</li>
 {{/each}}
