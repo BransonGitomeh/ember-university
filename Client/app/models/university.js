@@ -14,7 +14,7 @@ var university = DS.Model.extend({
   //students
   students:DS.hasMany('student',{async:true}),
 
-  Totalstudents: function() {
+  totalStudents: function() {
     var students = this.get('students');
     return students.get('length')
   }.property('students'),

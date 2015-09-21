@@ -7,12 +7,18 @@
 
             {{widgets/admin-sidenav
                username=model.user.firstname
+
+
+               allstudents=model.totalStudents
+               activestudents=model.universityactivestudentlist.Totalstudents
+               donestudents=model.universitydonestudentlist.Totalstudents
+               issuesstudents=model.universityissuesstudentlist.Totalstudents
+
                logout="logout"
                viewprofile="viewprofile"
                viewsettings="viewsettings"
                viewhelp="viewhelp"
                locksession="locksession"
-
               }}
 
               {{outlet}}

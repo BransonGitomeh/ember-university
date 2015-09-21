@@ -1,4 +1,16 @@
-<li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="{{icon}}"></i>{{text}}</a>
+<li class="bold">
+  <a class="collapsible-header waves-effect waves-cyan">
+    <i class="{{icon}}"></i>
+
+    {{text}}
+
+  {{#if newBadge}}
+    <span class="new badge">{{newBadge}}</span>
+  {{else}}
+    <span class="badge">{{badge}}</span>
+  {{/if}}
+  
+</a>
     <div class="collapsible-body" style="">
         <ul>
             {{yield}}

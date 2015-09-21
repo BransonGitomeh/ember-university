@@ -26,14 +26,14 @@ student.reopenClass({
     },{
       id: 2,
       useractivestudentlist:1,
-      user:1,
+      user:2,
       university:1,
       universityactivestudentlist:1,
 
     },{
       id: 3,
       useractivestudentlist:1,
-      user:1,
+      user:3,
       university:1,
       universityactivestudentlist:1
     },{

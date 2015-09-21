@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+
   actions:{
     viewprofile:function(){
       alert('sending user to view profile');

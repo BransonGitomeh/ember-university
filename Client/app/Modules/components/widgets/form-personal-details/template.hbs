@@ -1,22 +1,22 @@
 {{#wrappers/form-section text="Personal Details"}}
 
-  {{items/form-input label="First Name" s="12" m="4" l="3"}}
+  {{items/form-input label="First Name" value=student.user.firstname s="12" m="4" l=l}}
 
-  {{items/form-input label="Middle Name" s="12" m="4" l="3"}}
+  {{items/form-input label="Middle Name" value=student.user.middlename s="12" m="4" l=l}}
 
-  {{items/form-input label="Last Name" s="12" m="4" l="3"}}
+  {{items/form-input label="Last Name" value=student.user.lastname s="12" m="4" l=l}}
 
-  {{items/form-input label="Gender" s="12" m="4" l="3"}}
+  {{items/form-input label="Gender" value=student.user.gender s="12" m="4" l=l}}
 
-  <div class="input-field col s12 m4 l3">
-    {{items/date-picker }}
+  <div class="input-field col s12 m4 l{{l}}">
+    {{items/date-picker value=student.user.dob}}
   </div>
 
-  {{items/form-input label="Nationality" s="12" m="4" l="3"}}
+  {{items/form-input label="Nationality" value=student.user.nationality s="12" m="4" l=l}}
 
-  {{items/form-input label="Residential" s="12" m="4" l="3"}}
+  {{items/form-input label="Residential" value=student.user.residentialarea s="12" m="4" l=l}}
 
-  {{items/form-input label="Id Number" s="12" m="4" l="3"}}
+  {{items/form-input label="Id Number" value=student.user.phonenumber s="12" m="4" l=l}}
 
 
 {{/wrappers/form-section}}

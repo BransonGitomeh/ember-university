@@ -1,21 +1,9 @@
 {{#wrappers/student-list title=title}}
 
-    {{items/student-list title="Branson Gitomeh" route=route}}
+  {{#each model.universityactivestudentlist.students as |student|}}
 
-    {{items/student-list title="Mighty Kingkong"}}
+    {{items/student-list title=student.user.firstname student=student route=route}}
 
-    {{items/student-list title="Micah Kinyua"}}
-
-    {{items/student-list title="Geofrey Wangangi"}}
-
-    {{items/student-list title="Mighty Kingkong"}}
-
-    {{items/student-list title="Micah Kinyua"}}
-
-    {{items/student-list title="Geofrey Wangangi"}}
-
-    {{items/student-list title="Mighty carolyne"}}
-
-    {{items/student-list title="Micah Kinyua"}}
+  {{/each}}
 
 {{/wrappers/student-list}}

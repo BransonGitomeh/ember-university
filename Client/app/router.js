@@ -20,10 +20,10 @@ Router.map(function() {
 
     //student list views
     this.route('activestudents',function(){
-      this.route('details',function(){
-        this.route('profile');
-        this.route('payments');
-        this.route('faults');
+      this.route('details',{path:'/details/:student_id'},function(){
+        this.route('profile',{path:'/profile/:student_id'});
+        this.route('payments',{path:'/payments/:student_id'});
+        this.route('faults',{path:'/faults/:student_id'});
       });
     });
     this.route('completedstudents',function(){

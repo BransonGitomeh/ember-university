@@ -61,7 +61,35 @@ user.reopenClass({
       phonenumber: '0724736012',
       universities:[1,2],
       useractivestudentlist:1,
-      students:[1,2,3]
+      students:[1]
+    },{
+      id: 2,
+      firstname: 'Gideon',
+      middlename: 'Maina',
+      lastname: 'Kuria',
+      gender: 'male',
+      dob: '10/10/1995',
+      nationality: 'kenyan',
+      idNo: '11340673',
+      residentialarea: 'kenyan',
+      phonenumber: '0724736012',
+      universities:[1,2],
+      useractivestudentlist:1,
+      students:[2]
+    },{
+      id: 3,
+      firstname: 'Caroline',
+      middlename: 'Nyambura',
+      lastname: 'Kuria',
+      gender: 'female',
+      dob: '21 September,1995',
+      nationality: 'kenyan',
+      idNo: '11340673',
+      residentialarea: 'Nairobi-roysambu',
+      phonenumber: '0724736012',
+      universities:[1,2],
+      useractivestudentlist:1,
+      students:[3]
     }
   ]
 });

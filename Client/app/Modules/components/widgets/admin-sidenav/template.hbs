@@ -25,11 +25,11 @@
 
     {{#wrappers/nav-section text="Users" }}
 
-      {{#wrappers/accordion-section text="Students" icon="mdi-action-assignment-ind" }}
+      {{#wrappers/accordion-section text="Students" badge=allstudents icon="mdi-action-assignment-ind" }}
 
-        {{items/nav-item text="Active" badge="200" link="adminhome.activestudents"}}
-        {{items/nav-item text="Completed" badge="128" link="adminhome.completedstudents"}}
-        {{items/nav-item text="Issues" badge="65" link="adminhome.issuesstudents"}}
+        {{items/nav-item text="Active" badge=activestudents link="adminhome.activestudents"}}
+        {{items/nav-item text="Completed" badge=donestudents link="adminhome.completedstudents"}}
+        {{items/nav-item text="Issues" badge=issuesstudents link="adminhome.issuesstudents"}}
 
       {{/wrappers/accordion-section}}
 
@@ -67,6 +67,8 @@
 
       {{/wrappers/accordion-section}}
     {{/wrappers/nav-section}}
+
+
 
 
 
