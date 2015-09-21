@@ -106,7 +106,7 @@ export default Ember.Component.extend({
       var dd = {
           content: [
               { text: 'Dynamic parts', style: 'header' },
-              table(students, ['id','user.firstname','user.middlename','user.lastname','user.idNo'])
+              table(students, ['id','user.firstname','user.middlename','user.lastname','user.idNo','university.name'])
           ]
       }
 
