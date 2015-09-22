@@ -5,6 +5,8 @@ export default Ember.Route.extend({
     return this.store.find('user')
   },
 
+
+
   actions:{
     process:function(fileInfo, json){
 
@@ -16,7 +18,7 @@ export default Ember.Route.extend({
       //   }
       // })
 
-
+      var self = this;
       json.Sheet1.map(function(item){
         // Object.keys(item).map(function(key){
         //   console.log(key, item[key]);
@@ -25,11 +27,23 @@ export default Ember.Route.extend({
         console.log(item.name);
 
         if(item.name === 'branson'){
+          //validation logic here for each of the attributes
+          //errors should be pushed to an array and displayes beside each of the model **
           console.log('we just cought branson');
         }
 
         console.log(item.phone);
         console.log(item.dob);
+
+
+
+        var newuser = self.store.createRecord('user',{
+          firstname:item.name,
+          phonenumber:item.phone
+        });
+
+        newuser.save();
+
 
 
 

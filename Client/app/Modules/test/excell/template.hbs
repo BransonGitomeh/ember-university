@@ -1,1 +1,5 @@
 {{test/excell/input-component fileChanged="process"}}
+
+{{#each model as |user|}}
+  <li>{{user.firstname}}</li>
+{{/each}}
