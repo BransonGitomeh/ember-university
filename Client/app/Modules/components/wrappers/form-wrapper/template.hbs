@@ -16,7 +16,11 @@
           <li><a href="#">Forms</a>
           </li>
           <li class="active">Student</li>
+
         </ol>
+
+        <div class="center-align"><i>i have a {{#link-to 'adminhome.newStudentForm.sheet'}}spreadsheet{{/link-to}} instead</i></div>
+
 
         {{/if}}
 
@@ -30,7 +34,11 @@
           </li>
           <li class="active">Employee</li>
         </ol>
+
+        <div class="center-align"><i>i have a {{#link-to 'adminhome.newEmployeeForm.sheet'}}spreadsheet{{/link-to}} instead</i></div>
+
         {{/if}}
+
 
       </div>
     </div>
@@ -38,6 +46,7 @@
 </div>
 
 <!--breadcrumbs end-->
-
+<div class="card-panel">
 {{yield}}
+</div>
 </div>

@@ -62,9 +62,17 @@ Router.map(function() {
         this.route('history');
       });
     });
+    
     //data entry forms
-    this.route('newStudentForm');
-    this.route('newEmployeeForm');
+    this.route('newStudentForm',function(){
+      this.route('normal');
+      this.route('sheet');
+    });
+    this.route('newEmployeeForm',function(){
+      this.route('normal');
+      this.route('sheet');
+    });
+
   });
   this.route('test',function(){
     this.route('datanodes');
