@@ -1,10 +1,1 @@
-please select your spreadsheet file
-
-{{test/excell/input-component fileChanged="process"}}
-
-<br>
-<h3>curent curent registerd users</h3>
-
-{{#each model as |user|}}
-  <li>{{user.firstname}}</li>
-{{/each}}
+{{sheet-layout process="process" students=model}}

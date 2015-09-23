@@ -1,0 +1,19 @@
+please select your spreadsheet file
+<br>
+<b color="red">the spreadsheet must have the first item of of the column to be "name"</b>
+
+or try <a href="https://raw.githubusercontent.com/salsaUniversity/ember-university/master/Client/app/Modules/test/excell/test-template%20sheets/students.xlsx">this</a> test file with 1000! names
+
+
+<br>
+
+{{test/excell/input-component fileChanged="process"}}
+
+<br>
+<h3>curent curent registerd users</h3>
+
+
+this doent realy make sence but ill fix it
+{{#each students as |user|}}
+  <li>{{user.firstname}}</li>
+{{/each}}
