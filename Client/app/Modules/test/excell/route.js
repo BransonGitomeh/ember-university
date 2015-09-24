@@ -18,9 +18,7 @@ export default Ember.Route.extend({
 
   counter:0,
 
-  seecounter:function(){
-    this.set('model.name.name', counter)
-  }.property('counter'),
+
 
 
 
