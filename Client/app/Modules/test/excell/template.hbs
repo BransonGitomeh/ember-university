@@ -1,4 +1,13 @@
-{{test/excell/input-component fileChanged="process"}}
+
+
+{{#loader-modal read1="save" loading=loading}}
+  this is a modal and loader component to show status of the data crunching
+{{/loader-modal}}
+
+<li>
+<u>name: {{model.name.name}} {{counter}}</u>
+<u>counter: {{counter}}</u>
+</li>
 
 the spreadsheet must have the first item of of the column to be "name"
 <br>

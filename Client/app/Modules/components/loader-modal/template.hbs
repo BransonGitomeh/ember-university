@@ -1,0 +1,30 @@
+<!-- Modal Trigger -->
+  <a {{action 'open'}} class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>please select your excell sheet </h4>
+      <p>{{test/excell/input-component fileChanged="process"}}</p>
+      name:{{counter}}
+
+
+      {{#if loading}}
+      loading........
+
+      <!-- <div class="progress center-align">
+       <div class="indeterminate"></div>
+      </div> -->
+
+      {{/if}}
+
+      {{#if complete}}
+        complete :-)
+      {{/if}}
+      <p>{{yield}}</p>
+      <p></p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
