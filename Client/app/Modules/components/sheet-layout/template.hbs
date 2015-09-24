@@ -1,20 +1,11 @@
-please select your spreadsheet file
 <br>
-<b color="red">the spreadsheet must have the first item of of the column to be "name"</b>
-
-or try <a href="https://raw.githubusercontent.com/salsaUniversity/ember-university/master/Client/app/Modules/test/excell/test-template%20sheets/students.xlsx">this</a> test file with 1000! names
-
-
-<br>
-
+<div class="center-align">
 {{test/excell/input-component fileChanged="process"}}
-
+or try <a href="https://raw.githubusercontent.com/salsaUniversity/ember-university/master/Client/app/Modules/test/excell/test-template%20sheets/students.xlsx">this</a> test file with 1000! students
+</div>
 <br>
-<h3>curent curent registerd users</h3>
-
-
-this doent realy make sence but ill fix it
-
+<br>
+<br>
 <table class="stripped">
   <thead>
     <th>firstname</th>
@@ -29,21 +20,21 @@ this doent realy make sence but ill fix it
     <th>residentialarea</th>
     <th>phonenumber</th>
   </thead>
-  <tbody>
-{{#each students as |user|}}
-<tr>
-  <td>{{user.firstname}}</td>
-  <td>{{user.middlename}}</td>
-  <td>{{user.lastname}}</td>
+<tbody>
+  {{#each students as |user|}}
+    <tr>
+      <td>{{user.firstname}}</td>
+      <td>{{user.middlename}}</td>
+      <td>{{user.lastname}}</td>
 
-  <td>{{user.gender}}</td>
-  <td>{{user.dob}}</td>
-  <td>{{user.nationality}}</td>
+      <td>{{user.gender}}</td>
+      <td>{{user.dob}}</td>
+      <td>{{user.nationality}}</td>
 
-  <td>{{user.idNo}}</td>
-  <td>{{user.residentialarea}}</td>
-  <td>{{user.phonenumber}}</td>
-</tr>
-{{/each}}
+      <td>{{user.idNo}}</td>
+      <td>{{user.residentialarea}}</td>
+      <td>{{user.phonenumber}}</td>
+    </tr>
+  {{/each}}
 </tbody>
 </table>
