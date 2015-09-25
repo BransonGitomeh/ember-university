@@ -1,0 +1,56 @@
+<thead>
+    <tr>
+      <th>firstname</th>
+      <th>middlename</th>
+      <th>lastname</th>
+
+      <th>gender</th>
+      <th>dob</th>
+      <th>nationality</th>
+
+      <th>idNo</th>
+      <th>residentialarea</th>
+      <th>phonenumber</th>
+    </tr>
+</thead>
+
+<tfoot>
+    <tr>
+      <th>firstname</th>
+      <th>middlename</th>
+      <th>lastname</th>
+
+      <th>gender</th>
+      <th>dob</th>
+      <th>nationality</th>
+
+      <th>idNo</th>
+      <th>residentialarea</th>
+      <th>phonenumber</th>
+    </tr>
+</tfoot>
+
+<tbody>
+  {{#each students as |user|}}
+    <tr>
+        <!-- <td>Tiger Nixon</td>
+        <td>System Architect</td>
+        <td>Edinburgh</td>
+        <td>61</td>
+        <td>2011/04/25</td>
+        <td>$320,800</td> -->
+
+        <td>{{user.firstname}}</td>
+        <td>{{user.middlename}}</td>
+        <td>{{user.lastname}}</td>
+
+        <td>{{user.gender}}</td>
+        <td>{{user.dob}}</td>
+        <td>{{user.nationality}}</td>
+
+        <td>{{user.idNo}}</td>
+        <td>{{user.residentialarea}}</td>
+        <td>{{user.phonenumber}}</td>
+    </tr>
+  {{/each}}
+</tbody>

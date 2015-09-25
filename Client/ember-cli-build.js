@@ -32,6 +32,11 @@ module.exports = function(defaults) {
   //xlxs
   app.import('bower_components/js-xlsx/dist/xlsx.core.min.js')
 
+  //data-tables
+  app.import('bower_components/datatables/media/js/jquery.dataTables.min.js')
+  app.import('bower_components/datatables/media/css/jquery.dataTables.min.css')
+
+
 
   return app.toTree();
 };

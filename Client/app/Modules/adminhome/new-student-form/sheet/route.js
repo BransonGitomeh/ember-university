@@ -8,6 +8,10 @@ export default Ember.Route.extend({
 
 
   actions:{
+    startRoute:function(){
+      alert('started')
+    },
+
     process:function(fileInfo, json){
 
       //Object.keys(json.Sheet1[0]).map((key) => console.log(json.Sheet1[0][key]))
@@ -19,35 +23,34 @@ export default Ember.Route.extend({
       // })
 
       var self = this;
-      json.Sheet1.map(function(item){
-        // Object.keys(item).map(function(key){
-        //   console.log(key, item[key]);
-        // })
 
-        console.log(item.name);
-
-        if(item.name === 'branson'){
-          //validation logic here for each of the attributes
-          //errors should be pushed to an array and displayes beside each of the model **
-          console.log('we just cought branson');
-        }
-
-        console.log(item.phone);
-        console.log(item.dob);
+      try{
+        console.log('started in route');
+        json.Sheet1.map(function(item){
 
 
+          console.log(item.name);
+          console.log(item.phone);
+          console.log(item.dob);
 
-        var newuser = self.store.createRecord('user',{
-          firstname:item.name,
-          phonenumber:item.phone
+          var newuser = self.store.createRecord('user',{
+            firstname:item.name,
+            phonenumber:item.phone
+          });
+
+          newuser.save();
+
         });
+        console.log(completed in route);
+      }
 
-        newuser.save();
+      finally{
+        console.log('done in route');
+        this.transitionTo('adminhome.newStudentForm')
+      }
 
 
 
-
-      })
 
 
       //trying to not be specific about the name of the sheet...FAILED Misserably
